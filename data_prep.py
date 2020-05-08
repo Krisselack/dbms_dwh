@@ -78,7 +78,7 @@ customertable = sales_dat[["CU_ID", "CUSTOMERNAME", "PHONE",
                            "STATE", "POSTALCODE", "COUNTRY",
                            "TERRITORY", "CONTACTLASTNAME", "CONTACTFIRSTNAME"]]
 
-centertable.to_csv("./data_output/centertable.csv")
-timetable.to_csv("./data_output/ordertimes.csv")
-producttable.to_csv("./data_output/products.csv")
-customertable.to_csv("./data_output/customers.csv")
+centertable.to_csv("./data_output/centertable.csv", index=False)
+timetable.to_csv("./data_output/ordertimes.csv", index=False)
+producttable.to_csv("./data_output/products.csv", index=False)
+customertable.to_csv("./data_output/customers.csv", index=False)
