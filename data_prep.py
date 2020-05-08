@@ -59,7 +59,7 @@ sales_dat.columns
 
 # Creating Keys 
 sales_dat["ON_ID"] = create_key(sales_dat["ORDERNUMBER"], "ON")
-sales_dat["PR_ID"] = create_key(sales_dat["PRODUCTCODE"], "ON")
+sales_dat["PR_ID"] = create_key(sales_dat["PRODUCTCODE"], "PR")
 sales_dat["CU_ID"] = create_key(sales_dat["CUSTOMERNAME"], "CU")
 
 # Center Table 
