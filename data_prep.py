@@ -13,6 +13,7 @@ sales_dat = pd.read_csv("./data_import/sales_data_sample.csv", encoding='iso-885
 # price each was capped at 100.00 
 
 sales_dat.dtypes
+sales_dat.info()
 
 # datafix1: Clean Timedata 
 sales_dat["ORDERDATE"] = pd.to_datetime(sales_dat["ORDERDATE"])

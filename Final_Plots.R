@@ -66,16 +66,16 @@ customer_plot <- Orders_by_country %>%
 # sales per customers 
 ggplot(customer_plot, aes(reorder(customername, -sales), sales)) + 
   geom_col(aes(fill=country))   +
-  labs(y="Sales [USD]", x = "Customer") + theme_minimal() +
+  labs(y="Sales [USD]", x = "Customer") + theme_minimal(base_size = 20) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
-  labs(title = "Sales per Customers (Top 15, Fill Color = Country)") +
+  labs(title = "Sales per Customers", subtitle="(Top 15, Fill Color = Country)") +
   scale_fill_brewer(palette="Dark2") 
 ggsave("./plots/Customers.png")
 
 # Sales per Countries 
 ggplot(ctry_plot, aes(reorder(country, -sales), sales)) + 
   geom_col()   +
-  labs(y="Sales [USD]", x = "Customer") + theme_minimal() +
+  labs(y="Sales [USD]", x = "Customer") + theme_minimal(base_size = 20) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
   labs(title = "Sales per Country")
 
@@ -92,7 +92,7 @@ product_prize$SD_Price <- as.numeric(product_prize$SD_Price)
 # Prices per Product category 
 ggplot(product_prize, aes(productline, Price_Mean)) + 
                    geom_col()   + 
-  labs(y="Mean Price [USD]", x = "Product Line") + theme_minimal() +
+  labs(y="Mean Price [USD]", x = "Product Line") + theme_minimal(base_size = 20) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
   labs(title = "Product Prices per Category")
 ggsave("./plots/product_price.png")
@@ -102,14 +102,14 @@ ggsave("./plots/product_price.png")
 # Time Series 
 ggplot(datplot[datplot$variable == "sales", ], aes(orderdate, as.numeric(value))) + 
   geom_line() +
-  tat_smooth(method = "loess", formula = y ~ x, size = 1) + 
+  stat_smooth(method = "loess", formula = y ~ x, size = 1) + 
   scale_x_date(date_breaks = "3 month",
                date_minor_breaks = "1 month", date_labels = "%b-%Y")+ 
-labs(y="Sales [USD]", x = "Date [mon-YYYY]") + theme_minimal()+ 
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
-  labs(title = "Sales per Time", subtitle = "smoothin line: loess")
-ggsave("./plots/Time_Series.png")
+  labs(y="Sales [USD]", x = "Date [mon-YYYY]", title = "Sales per Time",
+       subtitle = "smoothing line: loess") + theme_minimal(base_size = 20)+ 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
 
+ggsave("./plots/Time_Series.png")
 
 
 
@@ -124,7 +124,7 @@ CYP_plot <- Country_Year_Product[, c("country", "year_id", "productline", "sum_s
 ggplot(CYP_plot, aes(x=country, y = sum_sales, group = productline, fill = productline))+
   geom_col() +
   facet_wrap(.~year_id) +
-    labs(y="Sales [USD]", x = "Country") + theme_minimal() +
+    labs(y="Sales [USD]", x = "Country") + theme_minimal(base_size = 10) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
   labs(title = "Sales per Country, Year and Category") +
   scale_fill_brewer(palette="Spectral") 
