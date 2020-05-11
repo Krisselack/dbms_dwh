@@ -430,7 +430,7 @@
     <created_date>2020/05/09 00:12:09.000</created_date>
     <modified_user>-</modified_user>
     <modified_date>2020/05/09 00:12:09.000</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -526,13 +526,13 @@
     <separator>,</separator>
     <enclosure>"</enclosure>
     <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
+    <buffer_size>5000000</buffer_size>
+    <lazy_conversion>N</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
     <format>mixed</format>
-    <encoding/>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>PK</name>
@@ -543,7 +543,7 @@
         <group>,</group>
         <length>8</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>ON_ID</name>
@@ -554,7 +554,7 @@
         <group>,</group>
         <length>5</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>PR_ID</name>
@@ -565,7 +565,7 @@
         <group>,</group>
         <length>5</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>CU_ID</name>
@@ -574,9 +574,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>4</length>
+        <length>5</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>ORDERNUMBER</name>
@@ -585,9 +585,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>15</length>
+        <length>50</length>
         <precision>0</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>QUANTITYORDERED</name>
@@ -596,9 +596,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>15</length>
+        <length>50</length>
         <precision>0</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>PRICEEACH</name>
@@ -607,9 +607,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>18</length>
-        <precision>15</precision>
-        <trim_type>none</trim_type>
+        <length>50</length>
+        <precision>2</precision>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>ORDERLINENUMBER</name>
@@ -618,9 +618,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>15</length>
+        <length>50</length>
         <precision>0</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>SALES</name>
@@ -629,9 +629,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>7</length>
+        <length>50</length>
         <precision>2</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>STATUS</name>
@@ -640,9 +640,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>10</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>DEALSIZE</name>
@@ -651,9 +651,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>6</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
     </fields>
     <attributes/>
@@ -688,13 +688,13 @@
     <separator>,</separator>
     <enclosure>"</enclosure>
     <header>Y</header>
-    <buffer_size>50000</buffer_size>
+    <buffer_size>5000000</buffer_size>
     <lazy_conversion>Y</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
     <format>mixed</format>
-    <encoding/>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>CU_ID</name>
@@ -703,9 +703,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>4</length>
+        <length>5</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>CUSTOMERNAME</name>
@@ -714,9 +714,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>30</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>PHONE</name>
@@ -725,9 +725,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>16</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>ADDRESSLINE1</name>
@@ -736,9 +736,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>40</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>ADDRESSLINE2</name>
@@ -747,9 +747,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>9</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>CITY</name>
@@ -758,9 +758,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>14</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>STATE</name>
@@ -769,9 +769,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>10</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>POSTALCODE</name>
@@ -780,9 +780,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>8</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>COUNTRY</name>
@@ -791,9 +791,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>9</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>TERRITORY</name>
@@ -802,9 +802,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>5</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>CONTACTLASTNAME</name>
@@ -813,9 +813,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>10</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
       <field>
         <name>CONTACTFIRSTNAME</name>
@@ -824,9 +824,9 @@
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>9</length>
+        <length>50</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
     </fields>
     <attributes/>
@@ -844,187 +844,6 @@
     </GUI>
   </step>
   <step>
-    <name>Ordertimetable</name>
-    <type>CsvInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <filename>C:\hitachi\data_import\ordertimes.csv</filename>
-    <filename_field/>
-    <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>,</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <format>mixed</format>
-    <encoding/>
-    <fields>
-      <field>
-        <name>ON_ID</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>4</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>ORDERDATE</name>
-        <type>Date</type>
-        <format>yyyy-MM-dd</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>QTR_ID</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>MONTH_ID</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>YEAR_ID</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Producttable</name>
-    <type>CsvInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <filename>C:\hitachi\data_import\products.csv</filename>
-    <filename_field/>
-    <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>,</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <format>mixed</format>
-    <encoding/>
-    <fields>
-      <field>
-        <name>PR_ID</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>3</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>MSRP</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>PRODUCTLINE</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>12</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>PRODUCTCODE</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>8</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>320</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Insert_Center</name>
     <type>InsertUpdate</type>
     <description/>
@@ -1036,10 +855,10 @@
       <schema_name/>
     </partitioning>
     <connection>local_postgres</connection>
-    <commit>100000</commit>
+    <commit/>
     <update_bypassed>N</update_bypassed>
     <lookup>
-      <schema/>
+      <schema>public</schema>
       <table>centertable</table>
       <key>
         <name>PK</name>
@@ -1189,10 +1008,10 @@
       <schema_name/>
     </partitioning>
     <connection>local_postgres</connection>
-    <commit>1000000</commit>
+    <commit/>
     <update_bypassed>N</update_bypassed>
     <lookup>
-      <schema/>
+      <schema>public</schema>
       <table>Customertable</table>
       <key>
         <name>CU_ID</name>
@@ -1353,10 +1172,10 @@
       <schema_name/>
     </partitioning>
     <connection>local_postgres</connection>
-    <commit>100000</commit>
+    <commit/>
     <update_bypassed>N</update_bypassed>
     <lookup>
-      <schema/>
+      <schema>public</schema>
       <table>Ordertimes</table>
       <key>
         <name>ON_ID</name>
@@ -1440,10 +1259,10 @@
       <schema_name/>
     </partitioning>
     <connection>local_postgres</connection>
-    <commit>1000000</commit>
+    <commit/>
     <update_bypassed>N</update_bypassed>
     <lookup>
-      <schema/>
+      <schema>public</schema>
       <table>Producttable</table>
       <key>
         <name>PR_ID</name>
@@ -1500,6 +1319,187 @@
     </remotesteps>
     <GUI>
       <xloc>432</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordertimetable</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>C:\hitachi\data_import\ordertimes.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>5000000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <format>mixed</format>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>ON_ID</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>ORDERDATE</name>
+        <type>Date</type>
+        <format>yyyy-MM-dd</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>QTR_ID</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>MONTH_ID</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>YEAR_ID</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Producttable</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>C:\hitachi\data_import\products.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>5000000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <format>mixed</format>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>PR_ID</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>MSRP</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>PRODUCTLINE</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>PRODUCTCODE</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
       <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>

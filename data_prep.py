@@ -68,15 +68,18 @@ centertable = sales_dat[["PK", "ON_ID", "PR_ID", "CU_ID", "ORDERNUMBER", "QUANTI
 
 # Time Table 
 timetable = sales_dat[["ON_ID", "ORDERDATE", "QTR_ID", "MONTH_ID", "YEAR_ID"]]
+timetable = timetable.drop_duplicates()
 
 # Product Table 
 producttable = sales_dat[["PR_ID", "MSRP", "PRODUCTLINE", "PRODUCTCODE"]]
+producttable = producttable.drop_duplicates()
 
 # Customer / Region 
 customertable = sales_dat[["CU_ID", "CUSTOMERNAME", "PHONE",
                            "ADDRESSLINE1", "ADDRESSLINE2", "CITY",
                            "STATE", "POSTALCODE", "COUNTRY",
                            "TERRITORY", "CONTACTLASTNAME", "CONTACTFIRSTNAME"]]
+customertable = customertable.drop_duplicates()
 
 centertable.to_csv("./data_output/centertable.csv", index=False)
 timetable.to_csv("./data_output/ordertimes.csv", index=False)
