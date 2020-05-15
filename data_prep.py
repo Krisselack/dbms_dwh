@@ -22,14 +22,14 @@ sales_dat["PRICEEACH"] = sales_dat["SALES"] / sales_dat["QUANTITYORDERED"]
 
 # create a unique key 
 keytest = sales_dat["ORDERNUMBER"].astype(str)+"_"+sales_dat["ORDERLINENUMBER"].astype(str)
-keytest.duplicated().sum()
+keytest.duplicated().sum() # @ Christian: Erklärung vom duplicated().sum()
 sales_dat["PK"] = keytest 
 
 # Funktion zum Erzeugen eines Keys für die
 # Aufteilung in verschiedene Tabellen -> Starschema
 
 def create_key(series, first = ""):
-    """Function to create a new key_value, if some entries are not unique 
+    """Function to create a new key_value, if some entries are not unique @ Christian: Erklärng des Kommentars
 
     :param series: pandas series 
     :param first: enables the addition of a string before integer
@@ -40,7 +40,7 @@ def create_key(series, first = ""):
     step1 = list(series.unique())
     step2 = dict()
 
-    for i in range(0, len(step1)):
+    for i in range(0, len(step1)): # @ Christian: auskommentieren des Codes
         step2[step1[i]] = i+1
 
     if len(first) > 0:
@@ -63,7 +63,7 @@ sales_dat["ON_ID"] = create_key(sales_dat["ORDERNUMBER"], "ON")
 sales_dat["PR_ID"] = create_key(sales_dat["PRODUCTCODE"], "PR")
 sales_dat["CU_ID"] = create_key(sales_dat["CUSTOMERNAME"], "CU")
 
-# Center Table 
+# Center Table # Verbindet alle anderen Tables in der Mitte & erhält den PK der anderen Dimensionen. Von dem ausgehend kann man in die anderen Dimensionen abtauchen. (Time --> Month, Quater)
 centertable = sales_dat[["PK", "ON_ID", "PR_ID", "CU_ID", "ORDERNUMBER", "QUANTITYORDERED",
                          "PRICEEACH", "ORDERLINENUMBER", "SALES", "STATUS", "DEALSIZE"]]
 
